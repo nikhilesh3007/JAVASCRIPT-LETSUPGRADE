@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JAVASCRIPT DAY 4
+        </title>
+        <style>
+            h1{
+                text-align: center;
+                text-orientation: sideways-right;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var i,j,n;
+            var x = prompt("WHERE DO YOU WANNA SEE YOUR OUTPUT:\n 1.WEBPAGE \n 2.CONSOLE");
+            n = prompt("ENTER A RANGE");
+            if(x==1)
+            {
+                document.write("YOUR OUTPUT IS:");
+                document.write("<br>");
+                for(i=0;i<=n;i++){
+                    var str = ''
+                    for(j=1;j<=i;j++)
+                    {
+                        str += j+' ';
+                    }
+                document.write(str);
+                document.write("<br>");
+                /*console.log(str);*/
+                }
+            }
+            if(x==2)
+            {
+                document.write("OPEN THE CONSOLE YOUR OUTPUT IS THERE");
+                document.write("<br>");
+                for(i=0;i<=n;i++){
+                    var str = ''
+                    for(j=1;j<=i;j++)
+                    {
+                        str += j+' ';
+                    }
+                /*document.write(str);
+                document.write("<br>");*/
+                console.log(str);
+                }
+            }
+        </script>
+    </body>
+</html>
